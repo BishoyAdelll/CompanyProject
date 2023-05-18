@@ -1,0 +1,77 @@
+//
+//footer.scss
+//
+
+.footer {
+  position: relative;
+  background-color: $white;
+  form {
+    position: relative;
+    span {
+      padding: 12px 15px;
+      border: none;
+      font-size: 28px;
+      position: absolute;
+      background-color: transparent;
+      top: 0;
+      bottom: 0;
+      color: $gray-600;
+    }
+    input {
+      font-size: 18px;
+      width: 100%;
+      padding: 18px 30px;
+      border: 1px solid $gray-100;
+      outline: none !important;
+      box-shadow: rgb(0 0 0 / 24%) 0px 2px 8px;
+      background-color: $white;
+      padding-left: 52px;
+      padding-right: 160px;
+      border-radius: 6px;
+      font-weight: 500;
+    }
+    button {
+      position: absolute;
+      top: 5px;
+      bottom: 5px;
+      right: 6px;
+      font-size: 17px;
+      i {
+        font-size: 19px;
+        transform: rotateZ(320deg);
+      }
+    }
+  }
+}
+
+form .input-group .btn-footer {
+  position: absolute;
+  right: 6px;
+  top: 0px;
+}
+
+.footer-nav {
+  .footer-item {
+    margin: 5px 0;
+    .footer-link {
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.5);
+      transition: all 0.5s ease;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}
+
+.footer-alt {
+  border-top: 1px solid $gray-300;
+  background-color: $gray-100;
+}
+
+@media (max-width: 767.98px) {
+  .footer {
+    height: auto;
+    padding: 40px 0;
+  }
+}

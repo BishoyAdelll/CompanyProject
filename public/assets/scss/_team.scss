@@ -1,0 +1,42 @@
+//
+//team.scss
+//
+
+.team {
+    position: relative;
+    background-color: $gray-200;
+    .team-box {
+        background-color: #282727;
+        .team-social {
+            li {
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                background: $primary;
+                border-radius: 5px;
+                margin-right: 0.2rem;
+                a {
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.team-name {
+    color:$white;
+    transition: all 0.5s ease;
+    &:hover {
+        color: $primary;
+    }
+}
+
+@media (max-width:768px) {
+    .bg-team {
+        height: auto;
+        padding: 90px 0;
+    }
+}

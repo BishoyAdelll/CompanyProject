@@ -1,0 +1,152 @@
+//
+// helper.scss
+//
+
+// color Loop
+@each $color, $value in $theme-colors {
+  .text-#{$color} {
+    color: $value !important;
+  }
+  .bg-#{$color} {
+    background-color: $value !important;
+  }
+}
+
+.section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+  margin-bottom: 40px !important;
+}
+
+.fs-13 {
+  font-size: 13px;
+}
+
+.fs-14{
+  font-size: 14px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-17 {
+  font-size: 17px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-20{
+  font-size: 20px;
+}
+
+.avatar-md {
+  height: auto;
+  width: 74px;
+}
+
+
+// font-weight
+
+.fw-medium {
+  font-weight: $font-weight-medium;
+}
+
+.fw-semibold {
+  font-weight: $font-weight-semibold;
+}
+
+
+.box-shadow {
+  box-shadow: $box-shadow;
+}
+
+// bg-overlay
+
+.bg-overlay {
+  position: absolute;
+  background-color: rgba(48,58,69, 0.7);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+//BACK TO TOP
+#back-to-top {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  border-color: transparent;
+  border-radius: 5px;
+  background-color: $primary;
+  color: $white;
+  transition: all 0.5s ease;
+  display: none;
+  &:hover {
+    background: $gray-800;
+  }
+}
+
+
+//  heading
+.title {
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+  span {
+    color: $primary;
+    }
+}
+.titleHR {
+	background: none repeat scroll 0 0 #e1e1e1;
+	height: 5px;
+	margin: 20px auto;
+	position: relative;
+	text-align: center;
+	width: 80px;
+  span {
+    border-left: 10px solid #f7f7f7;
+      border-right: 10px solid #f7f7f7;
+    display: inline-block;
+    height: 5px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    width: 25px;
+  }
+}
+
+.slog {
+	max-width: 620px;
+	margin: 0 auto;
+	margin-bottom: 80px;
+  text-align: center;
+}
+p {
+  color: #737373;
+  line-height: 23px;
+}
+/*******link color*******/
+.primary-link {
+  color: $dark;
+  transition: all 0.5s ease;
+  &:hover {
+    color: $primary;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px !important;
+  }
+}

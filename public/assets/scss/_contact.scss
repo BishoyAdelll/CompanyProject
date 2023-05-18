@@ -1,0 +1,49 @@
+//
+//contact.scss
+//
+
+.form-control {
+  font-size: 14px;
+  padding: 10px 15px;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+.contact-form {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 7px 29px 0px;
+  background-color: $white;
+  margin-bottom: -180px;
+  z-index: 0;
+  position: relative;
+}
+
+.map {
+  background: url("../images/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 226px 0;
+  z-index: -1;
+}
+
+@media (min-width: 576px) {
+  .contact-form::before {
+    content: "";
+    position: absolute;
+    outline: 2px dotted rgba(0, 0, 0, 0.08);
+    width: 105%;
+    height: 108%;
+    left: -23px;
+    top: -23px;
+  }
+}
+
+@media (max-width: 1140px) {
+  .contact-form::before {
+    left: -17px;
+    top: -17px;
+  }
+}

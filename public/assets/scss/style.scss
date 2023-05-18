@@ -1,0 +1,44 @@
+/* Template Name: Techtiq
+   Author: Themesdesign
+   File Description: Main Css file of the template
+*/
+
+/****************************************
+
+01.variables
+02.general
+03.helper
+04.avatar
+05.components
+06.counter
+07.loader
+08.menu
+09.home
+10.feature
+11.porfolio
+12.pricing
+13.pricing
+14.about
+15.services
+16.team
+17.contact
+18.footer
+
+*****************************************/
+
+@import "variables";
+@import "general";
+@import "avatar";
+@import "helper";
+@import "switcher";
+@import "components";
+@import "counter";
+@import "menu";
+@import "home";
+@import "porfolio";
+@import "pricing";
+@import "about";
+@import "services";
+@import "team";
+@import "contact";
+@import "footer";

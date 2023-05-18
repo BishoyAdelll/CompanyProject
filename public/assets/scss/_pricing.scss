@@ -1,0 +1,74 @@
+//
+//pricing.scss
+//
+
+.price-box {
+  padding: 40px 50px;
+  transition: all 0.5s ease;
+  overflow: hidden;
+  box-shadow: $box-shadow;
+  border-radius: 10px;
+  .business-pricing-lable {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0px;
+    .business-lable-name {
+      position: relative;
+      background-color: rgba($primary, 1);
+      color: $white;
+      font-size: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+      width: 100px;
+      top: 22px;
+      &:after {
+        content: "";
+        border-top: 20px solid rgba($primary, 1);
+        border-bottom: 20px solid rgba($primary, 1);
+        border-right: 11px solid transparent;
+        border-left: 11px solid transparent;
+        position: absolute;
+        left: -11px;
+        top: 0;
+      }
+    }
+  }
+  .plan-price {
+    sup {
+      top: -1.5rem;
+      font-size: 29px;
+      @media (max-width: 767.98px) { 
+        top: -1rem;
+        font-size: 20px;
+       }
+    }
+    sub {
+      bottom: -0.15rem;
+      font-size: 15px;
+    }
+  }
+  .price-features {
+    p {
+      i {
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        display: inline-block;
+        text-align: center;
+        font-size: 14px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+    }
+  }
+  &:hover {
+      transform: translateY(-10px);
+      transition: all .9s;   
+      .bg-overlay {
+          background-color: rgba(48, 58, 69, 0.7);
+      }
+  }
+}
